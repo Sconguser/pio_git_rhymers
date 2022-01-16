@@ -4,9 +4,9 @@ import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
-
+	public static final int BOUND = 20;
 	public static void main(String[] args) {
-		RhymersFactory factory = new DefaultRhymersFactory();
+		final RhymersFactory factory = new DefaultRhymersFactory();
 		
 		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
 				factory.getFIFORhymer(), factory.getHanoiRhymer()};
@@ -17,7 +17,7 @@ class RhymersDemo {
 		
 		java.util.Random rn = new java.util.Random();
 		for (int i = 1; i < 15; i++)
-			rhymers[3].countIn(rn.nextInt(20));
+			rhymers[3].countIn(rn.nextInt(BOUND));
 		
 		for (int i = 0; i < rhymers.length; i++) {
 			while (!rhymers[i].callCheck())
