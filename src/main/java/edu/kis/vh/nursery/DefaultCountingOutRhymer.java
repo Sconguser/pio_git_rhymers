@@ -5,6 +5,14 @@ public class DefaultCountingOutRhymer {
     private static final int FULL = 11;
     private int[] numbers = new int[12];
 
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
     private int total = INT;
 
     public void countIn(int in) {
