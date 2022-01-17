@@ -2,7 +2,6 @@ package edu.kis.vh.nursery;
 
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
-
 class RhymersDemo {
 	public static final int BOUND = 20;
 	public static void main(String[] args) {
