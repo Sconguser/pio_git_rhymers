@@ -4,7 +4,6 @@ public class IntLinkedList {
 
 	Node last;
 	int i;
-
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -35,6 +34,17 @@ public class IntLinkedList {
 		int ret = last.value;
 		last = last.prev;
 		return ret;
+	}
+
+}
+
+protected class Node {
+
+	public int value;
+	public Node prev, next;
+
+	public Node(int i) {
+		value = i;
 	}
 
 }
